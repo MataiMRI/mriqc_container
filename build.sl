@@ -2,7 +2,7 @@
 #SBATCH --job-name=apptainer_build
 #SBATCH --partition=milan
 #SBATCH --time=0-05:00:00
-#SBATCH --mem=20GB
+#SBATCH --mem=40GB
 #SBATCH --cpus-per-task=6
 
 # load environment module

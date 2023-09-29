@@ -3,5 +3,6 @@ From: nipreps/mriqc:23.1.0
 
 %post
     wget https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/7.4.1/freesurfer_ubuntu20-7.4.1_amd64.deb
-    dpkg -i freesurfer_ubuntu20-7.4.1_amd64.deb
+    apt update
+    apt install ./freesurfer_ubuntu20-7.4.1_amd64.deb
     rm freesurfer_ubuntu20-7.4.1_amd64.deb
