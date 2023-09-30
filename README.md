@@ -12,6 +12,7 @@ To build the container on [NeSI](https://www.nesi.org.nz/), submit a Slurm job u
 ```
 git clone https://github.com/MataiMRI/mriqc_container.git
 cd mriqc_container
+wget https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/7.4.1/freesurfer_ubuntu20-7.4.1_amd64.deb
 sbatch --account=PROJECTID build.sl
 ```
 
