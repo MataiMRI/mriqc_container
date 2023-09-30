@@ -1,9 +1,9 @@
 #!/bin/bash -e
 #SBATCH --job-name=apptainer_build
 #SBATCH --partition=milan
-#SBATCH --time=0-05:00:00
-#SBATCH --mem=40GB
-#SBATCH --cpus-per-task=6
+#SBATCH --time=0-10:00:00
+#SBATCH --mem=30GB
+#SBATCH --cpus-per-task=4
 
 # load environment module
 module purge
