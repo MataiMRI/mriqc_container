@@ -8,6 +8,7 @@ From: nipreps/mriqc:23.1.0
     export PATH=$PATH:/usr/local/freesurfer/7.4.1/bin
 
 %post
+    conda install -c mrtrix3 mrtrix3
     apt update
     apt install ./freesurfer_ubuntu20-7.4.1_amd64.deb
     rm freesurfer_ubuntu20-7.4.1_amd64.deb
