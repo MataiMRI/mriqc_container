@@ -24,13 +24,13 @@ Then push it to Gihub packages using:
 
 ```
 module purge && module load Apptainer/1.2.2
-export GITHUB_TOKEN=YOUR_TOKEN
-echo $GITHUB_TOKEN | apptainer remote login -u GITHUB_USERNAME --password-stdin oras://ghcr.io
-apptainer push mriqc.sif "oras://ghcr.io/MataiMRI/mriqc_container:VERSION"
+export APPTAINER_DOCKER_USERNAME=DOCKER_USERNAME
+export APPTAINER_DOCKER_PASSWORD=DOCKER_PASSWORD
+apptainer push mriqc.sif "oras://docker.io/DOCKER_USERNAME/mriqc:VERSION"
 ```
 
 where
 
-- `YOUR_TOKEN` is a Github personal access token (classic),
-- `GITHUB_USERNAME` is your Github username,
+- `DOCKER_USERNAME` is your DockerHub username,
+- `DOCKER_PASSWORD` is you DockerHub password,
 - `VERSION` is the git tag associated with the commit used to build the container.
